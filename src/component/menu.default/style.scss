@@ -1,0 +1,10 @@
+.nav-def{
+  &__li{
+    margin: 0 7px;
+    min-width: 105px;
+  }
+  &__link{
+    text-decoration: none;
+    color: #000;
+  }
+}
