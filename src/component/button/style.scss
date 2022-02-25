@@ -1,0 +1,19 @@
+.btn-def{
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-color: #4BA87D;
+  color: #fff;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 20px;
+  box-shadow: 0px 0px 0px 3px #4BA87D inset;
+  transition: box-shadow .25s linear, color .25s linear;
+  cursor: pointer;
+  &:hover{
+    background-color: #fff;
+    color: #4BA87D;
+  }
+}

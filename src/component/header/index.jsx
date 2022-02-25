@@ -12,7 +12,9 @@ const Header = function () {
           <Logo/>
           <div className='header__menu flex'>
             <MenuDefault />
-            <Button/>
+            <div className='header__btn'>
+              <Button text={"SIGN UP FREE"}/>
+            </div>
           </div>
         </div>
       </div>

@@ -1,11 +1,9 @@
 import React from "react";
 import './style.scss'
 
-const Button = function (){
+const Button = function ({text}){
   return (
-    <button>
-      Button
-    </button>
+    <button className="btn-def">{text}</button>
   )
 };
 
