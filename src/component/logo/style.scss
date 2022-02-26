@@ -15,3 +15,11 @@
     padding-left: 3px;
   }
 }
+
+@media screen and (max-width: 996px){
+  .logo{
+    &__name{
+      font-size: 22px;
+    }
+  }
+}

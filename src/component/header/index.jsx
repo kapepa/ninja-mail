@@ -6,7 +6,7 @@ import Button from "../button";
 
 const Header = function () {
   return (
-    <header className='header. section'>
+    <header className='header section'>
       <div className='container'>
         <div className='header__frame flex flex space-between'>
           <Logo/>
@@ -38,7 +38,9 @@ const Header = function () {
               </div>
             </div>
             <div className='header__scope'>
-              <div className='header__picture'></div>
+              <div className="header__square">
+                <div className='header__picture'></div>
+              </div>
             </div>
           </div>
         </div>

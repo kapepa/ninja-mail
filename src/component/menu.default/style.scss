@@ -34,5 +34,33 @@
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
   }
+}
 
+@media screen and (max-width: 996px){
+  .nav-def{
+    &__li{
+      margin: 0 5px;
+      min-width: 70px;
+      position: relative;
+      &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 3px;
+        background-color: #4BA87D;
+      }
+    }
+    &__link{
+      font-size: 11px;
+      line-height: 13px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .nav-def{
+    display: none;
+  }
 }

@@ -19,7 +19,10 @@
   }
   &__content{
     height: 100%;
-    padding: 0 75px;
+    max-width: 100%;
+    width: 1088px;
+    margin: 0 auto;
+    position: relative;
   }
   &__scope{
     flex-grow: 1;
@@ -27,6 +30,14 @@
     height: 100%;
     width: 100%;
     position: relative;
+  }
+  &__square{
+    position: relative;
+    &::before{
+      content: "";
+      display: block;
+      padding-top: 65%;
+    }
   }
   &__picture{
     background-image: url("../../pictures/png/header-body.png");
@@ -60,9 +71,6 @@
     font-size: 19px;
     line-height: 26px;
   }
-  &__btn-zone{
-
-  }
   &__button{
     width: 200px;
     height: 65px;
@@ -70,6 +78,102 @@
     font-size: 21px;
     &:last-child{
       margin-left: 45px;
+    }
+  }
+}
+
+@media screen and (max-width: 996px){
+  .header{
+    &__frame{
+      height: 66px;
+    }
+    &__menu{
+      height: 25px;
+    }
+    &__content{
+      max-width: 717px;
+    }
+    &__h1{
+      font-size: 38px;
+      line-height: 46px;
+    }
+    &__layer{
+      padding: 17px 0 25px 0;
+    }
+    &__span{
+      font-size: 12px;
+      line-height: 16px;
+    }
+    &__button{
+      width: 131px;
+      height: 42px;
+      &:last-child{
+        margin-left: 29px;
+      }
+    }
+    &__body{
+      height: 415px;
+    }
+    &__scope{
+       max-height: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .header{
+    &__body{
+      height: 335px;
+      padding-bottom: 15px;
+    }
+    &__content{
+      width: 301px;
+    }
+    &__info{
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+    }
+    &__layer{
+      align-self: end;
+    }
+    &__h1{
+      font-size: 36px;
+      line-height: 46px;
+      flex-grow: 1;
+    }
+    &__span{
+      font-size: 14px;
+    }
+    &__layer{
+      padding: 17px 0 16px 0;
+    }
+    &__btn-zone{
+      height: 40px;
+      align-self: center;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__button:last-child {
+      margin-left: 40px;
+    }
+    &__scope{
+      position: absolute;
+    }
+    &__square{
+      position: static;
+      &::before{
+        display: none;
+      }
+    }
+    &__picture{
+      width: 300px;
+      height: 170px;
+      top: 15px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-size: contain;
     }
   }
 }
