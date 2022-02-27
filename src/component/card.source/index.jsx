@@ -6,7 +6,10 @@ const CardSource = function ({image, text, classes}) {
   return (
     <div className={`card-source ${classes ? classes : ''}`}>
       <div className="card-source__cap">
-        <img className="card-source__image" src={image} alt="card"/>
+        <picture>
+          <source width={210} height={162} media="(max-width: 996px)"  srcset={image} alt="card"/>
+          <img width={320} height={249} className="card-source__image"  src={image} alt="card"/>
+        </picture>
       </div>
       <div className="card-source__content">
         <span className="card-source__span">{text}</span>

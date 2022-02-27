@@ -4,7 +4,8 @@
   background-color: #fff;
   &__cap{}
   &__image{
-    object-fit: contain;
+    object-fit: cover;
+    display: block;
   }
   &__content{
     padding: 25px 35px;
@@ -25,5 +26,19 @@
     font-weight: 800;
     font-size: 16px;
     line-height: 19px;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .card-source{
+    width: 210px;
+    height: 290px;
+    &__content{
+      padding: 17px 22px;
+    }
+    &__span{
+      font-size: 12px;
+      line-height: 16px;
+    }
   }
 }

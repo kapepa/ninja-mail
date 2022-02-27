@@ -17,16 +17,17 @@ const SourseSection = function () {
             />
             <CardSource
               image={Image2}
-              text={"Start building and sharing with your team today. NinjaMail is renowned for its industry leading team collaboration tools."}
+              text={"Start building and sharing with your team today. NinjaMail is renowned for its industry leading ..."}
               classes={"sourse__offer--card"}
             />
           </div>
           <div className="sourse__desc flex flex-direction-column justify-content-center">
             <h3 className="sourse__h3">The source for proven, engaging email campaigns</h3>
-            <span>Whether you’re a startup, small business, e-commerce store, or want to promote your app, NinjaMail has the feature set tailored for your business.</span>
+            <span className="sourse__text">Whether you’re a startup, small business, e-commerce store, or want to promote your app, NinjaMail has the feature set tailored for your business.</span>
           </div>
         </div>
       </div>
+      <div className="sourse__bg" ></div>
     </section>
   )
 };
