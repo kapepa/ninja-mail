@@ -1,0 +1,34 @@
+.sourse{
+  background-color: #4BA87D;
+  padding: 10px 0;
+  &__area{
+    max-width: 1088px;
+    margin: 0 auto;
+  }
+  &__offer{
+    gap: 30px;
+    &--card{
+      &:nth-child(even){
+        margin-top: 54px;
+      }
+    }
+  }
+  &__h3{
+    font-family: "Playfair", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+  &__desc{
+    margin-left: 47px;
+  }
+  &__text{
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 26px;
+  }
+}

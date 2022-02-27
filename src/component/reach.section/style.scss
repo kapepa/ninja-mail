@@ -1,0 +1,102 @@
+.reach{
+  background-color: #F7F7F7;
+  &__place{
+    padding: 130px 0 83px 0;
+    position: relative;
+  }
+  &__container{
+    position: relative;
+  }
+  &__harmonic{
+    transform: translateY(2%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    background-image: url("../../pictures/svg/harmonic.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    &::before{
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
+  }
+  &__area{
+    background-image: url("../../pictures/png/reach-bg.png");
+    background-repeat: no-repeat;
+    max-width: 944px;
+    height: 531px;
+    position: relative;
+    background-size: contain;
+    margin: 0 auto;
+  }
+  &__content{
+    height: 100%;
+    width: 100%;
+  }
+  &__h2{
+    font-family: "Playfair", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 80px;
+    color: #fff;
+    margin-bottom: 60px;
+  }
+  &__button{
+    width: 200px;
+    height: 60px;
+    padding: 20px 32px;
+  }
+}
+
+@media screen and (max-width: 996px){
+  .reach{
+    &__place{
+      padding: 85px 0 55px 0;
+    }
+    &__h2{
+      font-size: 38px;
+      line-height: 51px;
+      margin-bottom: 41px;
+    }
+    &__button{
+      width: 132px;
+      height: 42px;
+      padding: 12px 24px;
+    }
+    &__area{
+      max-height: 347px;
+      max-width: 616px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .reach{
+    &__place{
+      padding: 22px 0 15px 0;
+    }
+    &__h2{
+      font-size: 22px;
+      line-height: 29px;
+      margin-bottom: 20px;
+    }
+    &__button{
+      width: 65px;
+      height: 21px;
+      padding: 3px 13px;
+      font-size: 6px;
+    }
+    &__area{
+      height: 171px;
+      width: 304px;
+    }
+    &__harmonic{
+      &::before{
+        padding-top: 50%;
+      }
+    }
+  }
+}
