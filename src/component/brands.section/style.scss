@@ -1,0 +1,46 @@
+.brands{
+  padding: 0 0 96px 0;
+  &__head{
+
+  }
+  &__h4{
+    font-family: "Playfair";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 48px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  &__content{
+    max-width: 994px;
+    width: 100%;
+    padding: 0 25px;
+  }
+  &__image{
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 996px){
+  .brands{
+    &__h4{
+      font-size: 28px;
+      line-height: 36px;
+    }
+    &__content{
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media screen and (max-width: 996px){
+  .brands{
+    &__h4{
+      font-size: 26px;
+    }
+    &__content{
+      flex-direction: column;
+    }
+  }
+}

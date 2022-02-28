@@ -1,0 +1,148 @@
+.footer{
+  padding: 77px 0 48px 0;
+  &__logo{
+    align-self: flex-start;
+  }
+  &__place{
+    max-width: 944px;
+    margin: 0 auto;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 2px;
+      background-color: #DBDBDB;
+    }
+  }
+  &__nav{
+    margin-bottom: 15px;
+  }
+  &__ul{
+    margin: 0 30px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__li{
+    margin: 10px 0;
+  }
+  &__link{
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 2px;
+      background-color: transparent;
+      transition: background-color .25s linear;
+    }
+    &:hover{
+      &::before{
+        background-color: #000;
+      }
+    }
+  }
+  &__info{
+    padding-top: 40px;
+  }
+  &__license{
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0 20px;
+  }
+  &__agreement{
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #000;
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 996px){
+  .footer{
+    padding: 51px 0 30px 0;
+    &__logo{
+      width: 100%;
+      align-self: flex-start;
+      justify-content: center;
+    }
+    &__nav{
+      justify-content: center;
+    }
+    &__ul{
+      margin: 0 20px;
+      &:last-child{
+        margin-right: 20px;
+      }
+    }
+    &__place{
+      flex-direction: column;
+    }
+    &__li{
+      margin: 7px 0;
+    }
+    &__link{
+      font-size: 12px;
+      line-height: 14px;
+    }
+    &__info{
+      padding-top: 25px;
+    }
+    &__license{
+      font-size: 9px;
+      line-height: 11px;
+    }
+    &__agreement{
+      font-size: 9px;
+      line-height: 11px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .footer{
+    &__logo{
+      width: 100%;
+      align-self: flex-start;
+      justify-content: center;
+    }
+    &__place{
+      flex-direction: column;
+    }
+    &__ul{
+      margin: 0 15px;
+      &:last-child{
+        margin-right: 15px;
+      }
+    }
+    &__nav{
+      flex-wrap: wrap;
+    }
+    &__info{
+      flex-wrap: wrap;
+    }
+    &__license, &__agreement{
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+}

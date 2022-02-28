@@ -1,0 +1,64 @@
+.search{
+  &__wrapper{
+    margin-bottom: 20px;
+  }
+  &__input{
+    padding: 20px 25px;
+    width: 420px;
+    height: 65px;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    border-radius: 5px;
+    border: 1px solid #9F9F9F;
+    margin-right: 27px;
+  }
+  &__button{
+    width: 221px;
+    height: 65px;
+  }
+  &__received{
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #4BA87D;
+    padding-left: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 996px){
+  .search{
+    &__input{
+      width: 275px;
+      height: 42px;
+      padding: 12px 16px;
+      font-size: 13px;
+      line-height: 15px;
+    }
+    &__button{
+      width: 144px;
+      height: 42px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .search{
+    &__wrapper{
+      flex-direction: column;
+    }
+    &__input{
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+    &__received{
+      padding-left: 0;
+      justify-content: center;
+    }
+  }
+}

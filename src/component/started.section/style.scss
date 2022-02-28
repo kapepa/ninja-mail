@@ -1,0 +1,47 @@
+.started{
+  background-color: #4BA87D;
+  padding: 95px 0;
+  &__h4{
+    font-family: "Playfair", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 80px;
+    color: #fff;
+    margin-bottom: 55px;
+    text-align: center;
+  }
+  &__button{
+    font-size: 21px;
+    width: 200px;
+    height: 65px;
+  }
+}
+
+@media screen and (max-width: 996px){
+  .started{
+    padding: 59px 0;
+    &__h4{
+      font-size: 42px;
+      line-height: 56px;
+      margin-bottom: 50px;
+    }
+    &__button{
+      font-size: 13px;
+      width: 131px;
+      height: 42px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .started{
+    padding: 43px 0;
+    &__h4{
+      font-size: 38px;
+      line-height: 48px;
+      margin-bottom: 45px;
+      justify-content: center;
+    }
+  }
+}

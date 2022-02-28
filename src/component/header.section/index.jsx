@@ -9,7 +9,7 @@ const Header = function () {
     <header className='header section'>
       <div className='container'>
         <div className='header__frame flex flex space-between'>
-          <Logo/>
+          <Logo size="default"/>
           <div className='header__menu flex'>
             <MenuDefault />
             <div className='header__btn'>

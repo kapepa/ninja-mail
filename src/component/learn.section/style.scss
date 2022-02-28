@@ -1,0 +1,41 @@
+.learn{
+  z-index: 10;
+  position: relative;
+  padding: 51px 0 77px 0;
+  &__place{
+
+  }
+  &__head{
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  &__h4{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 48px;
+    max-width: 904px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 996px){
+  .learn{
+    &__h4{
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .learn{
+    padding: 10px 0 30px 0;
+    &__h4{
+      font-size: 26px;
+      line-height: 36px;
+    }
+  }
+}
